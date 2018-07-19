@@ -13,11 +13,11 @@ namespace CaesarCipher
                 int AsciiValue = (int)text[i];
                 if (AsciiValue >= 65 && AsciiValue <= 90)
                 {
-                    output += (char)(((int)text[i] + shiftKey - 65) % 26 + 65);
+                    output += (char)((AsciiValue + shiftKey - 65) % 26 + 65);
                 }
                 else if (AsciiValue >= 97 && AsciiValue <= 122)
                 {
-                    output += (char)(((int)text[i] + shiftKey - 97) % 26 + 97);
+                    output += (char)((AsciiValue + shiftKey - 97) % 26 + 97);
                 }
                 else output += text[i];
             }
