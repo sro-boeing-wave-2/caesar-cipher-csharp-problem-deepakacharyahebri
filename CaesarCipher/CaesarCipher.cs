@@ -7,6 +7,7 @@ namespace CaesarCipher
     {
         public static string Rotate(string text, int shiftKey)
         {
+            //implementing rotate function
             string output = "";
             for (int i = 0; i < text.Length; i++)
             {
